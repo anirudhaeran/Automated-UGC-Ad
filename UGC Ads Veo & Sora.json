@@ -1,5 +1,4 @@
 {
-  "name": "UGC Ads Veo & Sora",
   "nodes": [
     {
       "parameters": {
@@ -12,10 +11,10 @@
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.2,
       "position": [
-        -352,
-        -656
+        -96,
+        -32
       ],
-      "id": "78aa50ba-f902-4758-81a7-3b7c9a007f53",
+      "id": "86e9539f-43f4-4852-8516-ce8a9c67ecd6",
       "name": "Schedule Trigger"
     },
     {
@@ -49,17 +48,11 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        -192,
-        -656
+        64,
+        -32
       ],
-      "id": "dde42295-1ef8-46b7-8d48-00f631617d8d",
-      "name": "Get row(s) in sheet",
-      "credentials": {
-        "googleSheetsOAuth2Api": {
-          "id": "vjJ9PbCDOkVNZZRJ",
-          "name": "Google Sheets account"
-        }
-      }
+      "id": "86559156-7512-4770-95bc-bd295c4b39db",
+      "name": "Get row(s) in sheet"
     },
     {
       "parameters": {
@@ -146,10 +139,10 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.3,
       "position": [
-        -32,
-        -672
+        224,
+        -48
       ],
-      "id": "9ee3fc52-8e18-408e-b343-f21cb835ac33",
+      "id": "147bd880-3216-4e1b-80fa-1d8194255754",
       "name": "Switch"
     },
     {
@@ -163,10 +156,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
       "position": [
-        240,
-        -416
+        496,
+        208
       ],
-      "id": "8186a7b5-6c3e-470d-b426-2440963561e9",
+      "id": "a58367d2-b086-4603-9968-3897a2594bcd",
       "name": "Veo Image Prompt"
     },
     {
@@ -174,10 +167,10 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        656,
-        -416
+        912,
+        208
       ],
-      "id": "9bbfae06-327e-4cbf-a2bd-dfaaf446fff1",
+      "id": "c5800fce-4e08-4f40-8d54-15ab53fc22cc",
       "name": "Wait",
       "webhookId": "47b6b21f-7d2c-42fd-aa19-c20ad7dc1765"
     },
@@ -209,10 +202,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        944,
-        -416
+        1200,
+        208
       ],
-      "id": "24b8250a-857c-46bf-b639-25bb322296b1",
+      "id": "000ebf03-af0f-4524-a847-00f865ea3e12",
       "name": "If"
     },
     {
@@ -232,17 +225,11 @@
       "type": "@n8n/n8n-nodes-langchain.openAi",
       "typeVersion": 1.8,
       "position": [
-        1120,
-        -416
+        1376,
+        208
       ],
-      "id": "46ee3d76-ad1e-4097-80aa-34af67b573a9",
-      "name": "Analyze image",
-      "credentials": {
-        "openAiApi": {
-          "id": "yWkFMwOwuEEU2cnu",
-          "name": "OpenAi account 2"
-        }
-      }
+      "id": "a980fbd0-40d0-4dc6-bd60-0e147564ca9c",
+      "name": "Analyze image"
     },
     {
       "parameters": {
@@ -255,10 +242,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
       "position": [
-        240,
-        -224
+        496,
+        400
       ],
-      "id": "f4863776-f9b9-4ffa-98b4-7e636db55c4b",
+      "id": "3a91636c-3fd4-446a-8876-0f796c1ee290",
       "name": "Veo Video Prompt"
     },
     {
@@ -269,17 +256,11 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
       "typeVersion": 1,
       "position": [
-        240,
-        -304
+        496,
+        320
       ],
-      "id": "016f7d10-f989-4938-bec7-08c62cc1c1dd",
-      "name": "GPT-5-mini",
-      "credentials": {
-        "openRouterApi": {
-          "id": "td3utRybtI5wRRtH",
-          "name": "OpenRouter account 2"
-        }
-      }
+      "id": "044c1a4f-63bb-4e6e-aaf9-df65829d4126",
+      "name": "GPT-5-mini"
     },
     {
       "parameters": {
@@ -295,17 +276,11 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        512,
-        -224
+        768,
+        400
       ],
-      "id": "931975f9-e178-4467-8b15-5e10bb58c570",
-      "name": "Veo Video",
-      "credentials": {
-        "httpHeaderAuth": {
-          "id": "SiSYF54ok1YtEZ44",
-          "name": "Kie Demo"
-        }
-      }
+      "id": "d3e116f2-ad9e-41a9-bc89-f7d574b41476",
+      "name": "Veo Video"
     },
     {
       "parameters": {
@@ -314,10 +289,10 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        656,
-        -224
+        912,
+        400
       ],
-      "id": "fbfcc8d8-a283-49d4-9a35-d73e62d7626a",
+      "id": "d403be2b-47dc-4a2c-a06f-2932265c5182",
       "name": "Wait1",
       "webhookId": "b049e4b3-7d34-4fec-afc9-185d3a9764fa"
     },
@@ -340,17 +315,11 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        800,
-        -224
+        1056,
+        400
       ],
-      "id": "659f2893-d94c-4012-a20a-96e6accce356",
-      "name": "Get Veo Video",
-      "credentials": {
-        "httpHeaderAuth": {
-          "id": "SiSYF54ok1YtEZ44",
-          "name": "Kie Demo"
-        }
-      }
+      "id": "4e664854-f183-48c1-b807-c27831a3a713",
+      "name": "Get Veo Video"
     },
     {
       "parameters": {
@@ -380,10 +349,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        944,
-        -224
+        1200,
+        400
       ],
-      "id": "5e80eb0a-50f2-4187-b6a2-dee602002271",
+      "id": "5ea7d7f3-72a7-490d-b923-8fc1ff45b7d0",
       "name": "If1"
     },
     {
@@ -522,17 +491,11 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        1120,
-        -224
+        1376,
+        400
       ],
-      "id": "cf96d2c7-fc59-433d-9b1b-865e2bc91e52",
-      "name": "Update row in sheet",
-      "credentials": {
-        "googleSheetsOAuth2Api": {
-          "id": "vjJ9PbCDOkVNZZRJ",
-          "name": "Google Sheets account"
-        }
-      }
+      "id": "f91e2639-39c5-42ef-a76e-1b23f1add53f",
+      "name": "Update row in sheet"
     },
     {
       "parameters": {
@@ -545,10 +508,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
       "position": [
-        240,
-        16
+        496,
+        640
       ],
-      "id": "04411096-6986-4742-b3a9-2894db5bf78f",
+      "id": "26e85430-56c3-4d50-8978-0819fcd90737",
       "name": "Sora Video Prompt"
     },
     {
@@ -565,17 +528,11 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        512,
-        16
+        768,
+        640
       ],
-      "id": "97c623af-0293-419e-a734-8697a439d715",
-      "name": "Sora Video",
-      "credentials": {
-        "httpHeaderAuth": {
-          "id": "SiSYF54ok1YtEZ44",
-          "name": "Kie Demo"
-        }
-      }
+      "id": "2042e6b5-5c1b-4148-8805-69a16129774c",
+      "name": "Sora Video"
     },
     {
       "parameters": {
@@ -584,10 +541,10 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        656,
-        16
+        912,
+        640
       ],
-      "id": "ed415483-c45d-4598-a294-299148a765a0",
+      "id": "64b3fa53-6d51-4ad4-a0f8-29b3235aa014",
       "name": "Wait2",
       "webhookId": "47b6b21f-7d2c-42fd-aa19-c20ad7dc1765"
     },
@@ -619,10 +576,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        944,
-        16
+        1200,
+        640
       ],
-      "id": "12d0c301-dc15-4e08-9e38-14eedba5a295",
+      "id": "af1c9d49-336c-4356-b552-d25536ca7a34",
       "name": "If2"
     },
     {
@@ -644,15 +601,15 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        800,
-        16
+        1056,
+        640
       ],
-      "id": "b3ed0bd5-b30b-433d-aafa-c9eb406f091b",
+      "id": "1bdc2f20-b543-4ebc-9da4-637d497d826a",
       "name": "Get Sora Video",
       "credentials": {
         "httpHeaderAuth": {
-          "id": "SiSYF54ok1YtEZ44",
-          "name": "Kie Demo"
+          "id": "27OkNJYcv12xxQkz",
+          "name": "Whatsapp header auth"
         }
       }
     },
@@ -792,17 +749,11 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        1120,
-        16
+        1376,
+        640
       ],
-      "id": "2ea2bb40-202c-41d9-822d-03ad4ead2613",
-      "name": "Update row in sheet1",
-      "credentials": {
-        "googleSheetsOAuth2Api": {
-          "id": "vjJ9PbCDOkVNZZRJ",
-          "name": "Google Sheets account"
-        }
-      }
+      "id": "5fd48a01-6d67-4908-8c6b-e6195ceb62f1",
+      "name": "Update row in sheet1"
     },
     {
       "parameters": {
@@ -818,17 +769,11 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        512,
-        -416
+        768,
+        208
       ],
-      "id": "7b53c009-c191-4f1a-95dc-9a1b83dec993",
-      "name": "Nano Image",
-      "credentials": {
-        "httpHeaderAuth": {
-          "id": "SiSYF54ok1YtEZ44",
-          "name": "Kie Demo"
-        }
-      }
+      "id": "8b5e2aca-80a8-4efa-83d0-27ec634c6503",
+      "name": "Nano Image"
     },
     {
       "parameters": {
@@ -849,17 +794,11 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        800,
-        -416
+        1056,
+        208
       ],
-      "id": "66ee490a-7dae-4b3e-9e0a-beda92d0fb40",
-      "name": "Get Nano Image",
-      "credentials": {
-        "httpHeaderAuth": {
-          "id": "SiSYF54ok1YtEZ44",
-          "name": "Kie Demo"
-        }
-      }
+      "id": "b0fae783-d9d8-4cd7-b83e-41377de5bf70",
+      "name": "Get Nano Image"
     },
     {
       "parameters": {
@@ -872,10 +811,10 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 2.2,
       "position": [
-        240,
-        -656
+        496,
+        -32
       ],
-      "id": "097f76e8-1174-4970-8169-fc82cdefbf8c",
+      "id": "0efad9dc-4106-412a-bb6b-85dac829dfca",
       "name": "Veo Video Prompt1"
     },
     {
@@ -892,17 +831,11 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        512,
-        -656
+        768,
+        -32
       ],
-      "id": "207d1ef1-cb29-45a3-a47a-6ca61f99a7cb",
-      "name": "Veo Video1",
-      "credentials": {
-        "httpHeaderAuth": {
-          "id": "SiSYF54ok1YtEZ44",
-          "name": "Kie Demo"
-        }
-      }
+      "id": "9b2e7190-fcdd-4b77-b199-98214a1d69d0",
+      "name": "Veo Video1"
     },
     {
       "parameters": {
@@ -911,10 +844,10 @@
       "type": "n8n-nodes-base.wait",
       "typeVersion": 1.1,
       "position": [
-        656,
-        -656
+        912,
+        -32
       ],
-      "id": "5162e52d-a2ab-47c3-aaa7-6f0d3c4e47a6",
+      "id": "cda98560-d3dd-45f1-be27-a3a47e2e9099",
       "name": "Wait3",
       "webhookId": "b049e4b3-7d34-4fec-afc9-185d3a9764fa"
     },
@@ -937,17 +870,11 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        800,
-        -656
+        1056,
+        -32
       ],
-      "id": "65f9c385-123a-4550-9170-c10446119f2d",
-      "name": "Get Veo Video1",
-      "credentials": {
-        "httpHeaderAuth": {
-          "id": "SiSYF54ok1YtEZ44",
-          "name": "Kie Demo"
-        }
-      }
+      "id": "7c50d286-b2c6-492e-a3fd-5abd75f23e5b",
+      "name": "Get Veo Video1"
     },
     {
       "parameters": {
@@ -977,10 +904,10 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        944,
-        -656
+        1200,
+        -32
       ],
-      "id": "7e7cdd22-5240-4308-9041-efaff4ca8fc2",
+      "id": "cd01799e-6d93-43d6-81db-ac7277267a45",
       "name": "If3"
     },
     {
@@ -1119,17 +1046,11 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        1120,
-        -656
+        1376,
+        -32
       ],
-      "id": "5ecad2a9-f8b3-4e02-ad3f-189ebf003bd6",
-      "name": "Update row in sheet2",
-      "credentials": {
-        "googleSheetsOAuth2Api": {
-          "id": "vjJ9PbCDOkVNZZRJ",
-          "name": "Google Sheets account"
-        }
-      }
+      "id": "f0d145ae-1baa-491a-a6cb-8d9389e1a18f",
+      "name": "Update row in sheet2"
     },
     {
       "parameters": {
@@ -1141,10 +1062,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -400,
-        -720
+        -144,
+        -96
       ],
-      "id": "5219341e-ea01-4be7-8c26-954f3510e1fd",
+      "id": "fd960bf8-25c9-4453-978b-e9432b22d0cb",
       "name": "Sticky Note"
     },
     {
@@ -1157,10 +1078,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        144,
-        -720
+        400,
+        -96
       ],
-      "id": "356269e8-a3e5-40b2-a6d2-022a8bd541f3",
+      "id": "3c285e00-8b06-4fa4-92cf-865e9e55953d",
       "name": "Sticky Note1"
     },
     {
@@ -1173,10 +1094,10 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        144,
-        -480
+        400,
+        144
       ],
-      "id": "24e98bf0-7631-4a4d-a082-a4c13631d468",
+      "id": "0b608c4f-baa5-4492-b9b8-46d0a67df7f4",
       "name": "Sticky Note2"
     },
     {
@@ -1189,29 +1110,28 @@
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        144,
-        -48
+        400,
+        576
       ],
-      "id": "40c1d8c6-942d-4c3d-8268-800d43590d57",
+      "id": "33afbb83-ecb0-44cc-b2bf-c1bf94b03179",
       "name": "Sticky Note3"
     },
     {
       "parameters": {
-        "content": "# 🛠️ Setup Guide  \n**Author:** [Nate Herk](https://www.youtube.com/@nateherk)\n\nFollow the steps below to get your AI-powered workflow running smoothly:\n\n### ✅ Step 1: Copy the [Google Sheet Template](https://docs.google.com/spreadsheets/d/15WIJkzbXbs-bj8BLaUBDNE8HwUCF1-Z_0MZmKE18byA/copy)  \nMake your own copy and connect it to all the **Google Sheet** nodes inside the workflow. \n\n### ✅ Step 2: Connect Your OpenRouter Model (or AI of Choice)  \nPlug in your [OpenRouter](https://openrouter.ai/) API key—or any compatible model you prefer—to power your agents.\n\n### ✅ Step 3: Add Your [Kie.AI](https://www.kie.ai/) API Key  \nInsert your **Kie.AI** key into all the relevant **HTTP Request** nodes so your agents can retrieve knowledge from Kie.\n\n### ✅ Step 4: Connect Your OpenAI API Key  \nThe **Analyze Image** node uses OpenAI Vision—make sure your **OpenAI API key** is properly configured.\n\n### 💡 Step 5: Start Populating & Testing  \nBegin filling in the **Google Sheet** with test data and run the workflow to see the agents in action.\n",
+        "content": "# 🛠️ Setup Guide  \n\nFollow the steps below to get your AI-powered workflow running smoothly:\n\n### ✅ Step 1: Copy the [Google Sheet Template](https://docs.google.com/spreadsheets/d/15WIJkzbXbs-bj8BLaUBDNE8HwUCF1-Z_0MZmKE18byA/copy)  \nMake your own copy and connect it to all the **Google Sheet** nodes inside the workflow. \n\n### ✅ Step 2: Connect Your OpenRouter Model (or AI of Choice)  \nPlug in your [OpenRouter](https://openrouter.ai/) API key—or any compatible model you prefer—to power your agents.\n\n### ✅ Step 3: Add Your [Kie.AI](https://www.kie.ai/) API Key  \nInsert your **Kie.AI** key into all the relevant **HTTP Request** nodes so your agents can retrieve knowledge from Kie.\n\n### ✅ Step 4: Connect Your OpenAI API Key  \nThe **Analyze Image** node uses OpenAI Vision—make sure your **OpenAI API key** is properly configured.\n\n### 💡 Step 5: Start Populating & Testing  \nBegin filling in the **Google Sheet** with test data and run the workflow to see the agents in action.\n",
         "height": 656,
         "width": 528
       },
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
       "position": [
-        -400,
-        -480
+        -144,
+        144
       ],
-      "id": "294b9d3a-51db-4a9e-845f-d7c62f803ca2",
+      "id": "8a44c37e-77bb-4463-baca-b506765af14a",
       "name": "Sticky Note4"
     }
   ],
-  "pinData": {},
   "connections": {
     "Schedule Trigger": {
       "main": [
@@ -1311,6 +1231,17 @@
         ]
       ]
     },
+    "Veo Video Prompt": {
+      "main": [
+        [
+          {
+            "node": "Veo Video",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
     "GPT-5-mini": {
       "ai_languageModel": [
         [
@@ -1332,17 +1263,6 @@
           {
             "node": "Veo Video Prompt1",
             "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Veo Video Prompt": {
-      "main": [
-        [
-          {
-            "node": "Veo Video",
-            "type": "main",
             "index": 0
           }
         ]
@@ -1410,6 +1330,17 @@
         ]
       ]
     },
+    "Sora Video": {
+      "main": [
+        [
+          {
+            "node": "Wait2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
     "Wait2": {
       "main": [
         [
@@ -1430,17 +1361,6 @@
             "index": 0
           }
         ],
-        [
-          {
-            "node": "Wait2",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Sora Video": {
-      "main": [
         [
           {
             "node": "Wait2",
@@ -1546,15 +1466,8 @@
       ]
     }
   },
-  "active": false,
-  "settings": {
-    "executionOrder": "v1"
-  },
-  "versionId": "86d96ca5-a9b5-480f-be34-7485c3dd3f06",
+  "pinData": {},
   "meta": {
-    "templateCredsSetupCompleted": true,
-    "instanceId": "95e5a8c2e51c83e33b232ea792bbe3f063c094c33d9806a5565cb31759e1ad39"
-  },
-  "id": "ZV3GRyQvdeVBVpeg",
-  "tags": []
+    "instanceId": "8ada9bcc9ea45588c6264d0e90c5cf681653b47a083291c1f78d0cc01f7e596b"
+  }
 }
